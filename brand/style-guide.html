@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thrivent Life-Stage Portal Concept — Brand & Style Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--red:#BE1D3D;--ink:#131415;--blue:#0069A8;--blue7:#1A4C6B;--navy:#27455C;--cream:#FDFAF5;--sand1:#FAF3E5;--sand2:#F9ECD7;--gold:#F6E2C1;--mist:#D7E5E7;--fog:#F5F8F9;--border:#CBD3D8;--eyebrow:#454B4F;--muted:#606B71;--sans:"Basis Grotesque for Thrivent",Inter,system-ui,sans-serif;--serif:"Burgess for Thrivent","Libre Baskerville",Georgia,serif}
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:#fff;font-size:16px;line-height:24px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1248px;margin:0 auto;padding:0 32px}
+header.top{border-bottom:1px solid var(--border);background:#fff;position:sticky;top:0;z-index:5}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+header.top .wm{height:22px}
+header.top nav a{color:var(--blue);text-decoration:none;font-size:14px;margin-left:20px;font-weight:500}
+.hero{background:var(--cream);position:relative;overflow:hidden}
+.hero .wrap{padding:88px 32px 80px;position:relative;z-index:1}
+.pattern{position:absolute;right:-20px;top:0;bottom:0;width:46%;opacity:1}
+.eyebrow{font-size:14px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--eyebrow);margin:0 0 12px}
+h1.display{font-size:54px;line-height:56px;font-weight:300;margin:0 0 20px;max-width:640px}
+.lead{font-size:20px;line-height:28px;max-width:620px;margin:0}
+.meta{margin-top:28px;font-size:13px;color:var(--muted)}
+section{padding:80px 0;border-top:1px solid #EEF1F2}
+section.alt{background:var(--fog)}
+h2{font-size:44px;line-height:48px;font-weight:700;margin:0 0 12px}
+h2 i{font-family:var(--serif);font-weight:800}
+h3{font-size:20px;line-height:28px;font-weight:700;margin:0 0 8px}
+.sub{color:var(--muted);max-width:720px;margin:0 0 40px}
+.grid{display:grid;gap:24px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}.g6{grid-template-columns:repeat(6,1fr)}
+.card{background:#fff;border-radius:8px;box-shadow:0 0 0 1px var(--border);padding:24px}
+.logo-tile{border-radius:8px;height:200px;display:flex;align-items:center;justify-content:center;padding:32px}
+.logo-tile svg{max-height:70px;width:auto;max-width:100%}
+.logo-tile.mono svg{max-height:120px}
+.cap{font-size:13px;line-height:19.5px;color:var(--muted);margin-top:10px}
+.cap b{color:var(--ink);font-weight:600;display:block}
+.sw{border-radius:8px;overflow:hidden;box-shadow:0 0 0 1px var(--border);background:#fff}
+.sw .chip{height:96px}
+.sw .info{padding:12px 14px;font-size:13px;line-height:18px}
+.sw .info b{display:block;font-size:14px}
+.sw .info code{color:var(--muted);font-family:ui-monospace,Menlo,monospace;font-size:12px}
+.grouplabel{font-size:14px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--eyebrow);margin:40px 0 16px}
+.ratio{display:flex;height:40px;border-radius:8px;overflow:hidden;box-shadow:0 0 0 1px var(--border);margin-top:8px}
+.trow{display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:baseline;padding:20px 0;border-bottom:1px solid #EEF1F2}
+.trow .spec{font-size:13px;color:var(--muted);line-height:18px}
+.trow .spec b{color:var(--ink);display:block;font-size:14px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-size:16px;font-weight:700;border-radius:6px;padding:16px 24px;border:0;cursor:pointer;text-decoration:none}
+.btn-primary{background:var(--red);color:#fff}
+.btn-pill{background:var(--red);color:#fff;border-radius:1000px;padding:12px 24px;font-size:18px;font-weight:500}
+.btn-secondary{background:#fff;color:var(--blue7);box-shadow:inset 0 0 0 2px var(--blue7)}
+.btn-ondark{background:var(--sand2);color:var(--ink)}
+.btn:focus-visible{outline:none;box-shadow:0 0 0 2px #fff,0 0 0 4px #17628F}
+.link{color:var(--blue);font-weight:700;text-decoration:none}
+.panel-dark{background:var(--navy);border-radius:8px;padding:32px;color:#fff}
+.quote{display:grid;grid-template-columns:1.1fr 1fr;border-radius:8px;overflow:hidden}
+.quote .q{background:var(--sand2);padding:36px}
+.qmark{width:44px;height:44px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:40px;line-height:1;padding-top:14px;margin-bottom:-6px}
+.quote blockquote{margin:0;font-family:var(--serif);font-weight:700;font-size:28px;line-height:36px}
+.quote .who{margin-top:18px}
+.photo{background:linear-gradient(160deg,#9db3bf,#5f7b8a 60%,#3d5563);position:relative;min-height:260px}
+.photo span{position:absolute;bottom:16px;left:16px;font-size:12px;color:#fff;opacity:.85}
+.stats{background:var(--mist);border-radius:8px;padding:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.stat .n{font-size:54px;line-height:56px;font-weight:700}
+.stat .l{font-size:13px;line-height:19.5px;margin-top:6px}
+.tiles{background:var(--sand1);border-radius:16px;padding:48px;display:flex;gap:28px;justify-content:center;flex-wrap:wrap}
+.tile{width:150px;height:150px;background:#fff;border-radius:6px;box-shadow:0 8px 16px -4px rgba(0,0,0,.12);padding:18px;display:flex;flex-direction:column;justify-content:space-between;font-size:14px;line-height:18px;font-weight:500}
+.tile:nth-child(1){transform:rotate(-5deg)}.tile:nth-child(2){transform:rotate(4deg)}.tile:nth-child(3){transform:rotate(-3deg)}.tile:nth-child(4){transform:rotate(6deg)}
+.icon{width:48px;height:48px;border-radius:50%;background:var(--mist);display:flex;align-items:center;justify-content:center}
+.tags span{display:inline-block;background:var(--gold);font-size:12px;font-weight:600;border-radius:4px;padding:2px 8px;margin:0 6px 6px 0}
+.feature{background:var(--sand1);border-radius:8px;padding:28px}
+.feature h4{color:var(--blue);font-size:32px;line-height:40px;margin:0 0 8px}
+.arrowdisc{width:28px;height:28px;border-radius:50%;background:var(--blue);display:inline-flex;align-items:center;justify-content:center;color:#fff;margin-top:16px}
+.markers{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.mk{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600}
+.dot{width:14px;height:14px;border-radius:50%}
+.wire{display:inline-flex;align-items:center;gap:6px;background:#BEDBED;color:var(--blue7);font-size:12px;font-weight:600;border-radius:1000px;padding:3px 10px;margin:0 6px 6px 0}
+.demo{display:grid;grid-template-columns:28% 1fr;border-radius:16px;overflow:hidden;box-shadow:0 0 0 1px var(--border);height:420px}
+.rail{background:var(--navy);color:#fff;padding:24px;position:relative}
+.rail .count{font-size:40px;line-height:44px;font-weight:700}
+.rail .countl{font-size:12px;opacity:.75;margin-bottom:24px}
+.rail ol{list-style:none;margin:0;padding:0 0 0 20px;border-left:2px solid rgba(255,255,255,.25)}
+.rail li{position:relative;padding:8px 0 8px 8px;font-size:14px;opacity:.7}
+.rail li:before{content:"";position:absolute;left:-27px;top:13px;width:12px;height:12px;border-radius:50%;background:var(--navy);box-shadow:0 0 0 2px rgba(255,255,255,.6)}
+.rail li.on{opacity:1;font-weight:700}.rail li.on:before{background:#fff}
+.rail li .m{display:inline-block;width:8px;height:8px;border-radius:50%;margin-left:6px}
+.stage{background:var(--cream);padding:28px}
+.browser{background:#fff;border-radius:8px;box-shadow:0 8px 16px -4px rgba(0,0,0,.08),0 0 0 1px var(--border);overflow:hidden;height:100%}
+.bar{height:28px;background:#F1F3F4;display:flex;align-items:center;gap:6px;padding:0 10px}
+.bar i{width:8px;height:8px;border-radius:50%;background:#CBD3D8}
+.ph{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:1px solid #EEF1F2}
+.ph svg{height:14px;width:auto}
+.pbody{padding:18px;display:grid;grid-template-columns:1.3fr 1fr;gap:14px}
+.mini{border-radius:8px;padding:14px;font-size:12px;line-height:17px}
+.foot{font-size:12px;color:var(--muted);text-align:center;padding:32px 0 48px;border-top:1px solid var(--border)}
+.band{background:var(--gold);padding:28px 0}
+.band .wrap{display:flex;align-items:center;gap:14px;font-size:22px;color:var(--blue7)}
+.band svg{height:36px;width:auto}
+.do,.dont{border-radius:8px;padding:24px}
+.do{background:#EEF6F4}.dont{background:#FBEFF1}
+.do h3{color:#2E7D73}.dont h3{color:var(--red)}
+.do ul,.dont ul{margin:0;padding-left:18px}
+.do li,.dont li{margin:6px 0}
+.legacy{display:flex;gap:16px;align-items:center}
+.legacy img{width:72px;height:72px;object-fit:contain;filter:grayscale(1);opacity:.6;border-radius:8px;box-shadow:0 0 0 1px var(--border);background:#fff}
+@media (max-width:900px){.g4,.g6,.markers{grid-template-columns:repeat(2,1fr)}.g3,.g2,.quote,.stats{grid-template-columns:1fr}.demo{grid-template-columns:1fr;height:auto}.pattern{display:none}h1.display{font-size:40px;line-height:44px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><svg role="img" aria-label="Thrivent" style="height:22px;width:auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-908.8 -75 1359.3 293.8">
+ <style type="text/css">
+  .st0{fill:#BE1D3D;}
+	.st1{fill:#E30045;}
+ </style>
+ 
+ 
+ <g>
+  <g transform="translate(-62.000000, -101.000000)">
+   <g>
+    <g transform="translate(62.000000, 101.000000)">
+     <g>
+      <g transform="translate(149.128370, 3.446727)">
+       <path class="st0" d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6">
+       </path>
+       <path class="st1" d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1">
+       </path>
+      </g>
+      <g>
+       <path d="M-908.8-47.4v185.7c0,26,5.3,45,15.8,56.8c10.5,11.8,29.8,17.7,58,17.7h21.7v-49.3h-17 c-11.3,0-18.8-2.2-22.5-6.7c-3.7-4.5-5.5-12.2-5.5-23.3V47.2h52V3.9h-52.8v-51.3H-908.8">
+       </path>
+       <path d="M-674-2c-10.3,0-20.2,2.6-30,7.9c-9.7,5.3-16.7,11.3-20.9,18.1h-0.8v-99h-51.3v287.9h51.3V81.5 c0-10.8,3.1-19.5,9.3-26.2c6.2-6.7,15.2-10.1,27-10.1c12.4,0,21.6,3.7,27.8,11.2c6.2,7.5,9.3,17,9.3,28.6v127.8h51.3V73.7 c0-23.1-6.6-41.5-19.7-55.2C-633.9,4.8-651.6-2-674-2">
+       </path>
+      </g>
+      <path d="M-498.7,7c-7.8,4.7-13.6,11-17.6,18.9h-0.8V3.9h-48.5v209h51.3V98.1c0-31.8,12-47.7,35.9-47.7 c5,0,10.4,1.1,16.2,3.2l7.9-49.7c-6-2.6-12.4-3.9-18.9-3.9C-482.5-0.1-490.9,2.3-498.7,7">
+      </path>
+      <g transform="translate(59.743261, 0.000000)">
+       <polygon points="-488.6,212.9 -437.3,212.9 -437.3,3.9 -488.6,3.9">
+       </polygon>
+       <polygon points="-488.6,-26.5 -437.3,-26.5 -437.3,-75 -488.6,-75">
+       </polygon>
+      </g>
+      <g transform="translate(69.164313, 9.191271)">
+       <polyline points="-317.1,129.1 -317.9,129.1 -369.9,-5.3 -423.2,-5.3 -339.6,203.7 -296.2,203.7 -212.6,-5.3  -265.1,-5.3 -317.1,129.1">
+       </polyline>
+       <path d="M-116.2-11.2c-27.9,0-50.9,10.1-69.2,30.2c-18.3,20.1-27.4,46.9-27.4,80.2c0,33.4,9.2,60.1,27.6,80.2 c18.4,20.1,42.2,30.2,71.4,30.2c36.3,0,65.1-15.5,86.4-46.5l-35.9-31.5c-6.8,10-14.1,17.9-21.9,23.9 c-7.8,5.9-17.5,8.9-29.4,8.9c-13.9,0-24.9-4.3-32.9-12.8c-8-8.5-12.4-20.8-13.2-36.9h140.4V99.2c0-33.4-9-60.1-27-80.2 C-65.4-1.2-88.3-11.2-116.2-11.2 M-160.8,76.3c1.1-12.1,5.6-22.2,13.6-30.4c8-8.1,18.3-12.2,31-12.2 c13.7,0,24.5,3.7,32.3,11.2c7.9,7.5,12.5,17.9,13.8,31.3H-160.8">
+       </path>
+       <path d="M110.5-11.2c-11,0-21.6,2.5-31.5,7.5c-10,5-17.9,11.2-23.7,18.5h-0.8V-5.3H5.2v209h51.3V75.9 c0-12.1,3.5-21.7,10.6-29c7.1-7.2,17-10.8,29.6-10.8c13.4,0,22.9,3.6,28.4,10.8c5.5,7.2,8.3,18.1,8.3,32.5v124.2h51.3V66.8 c0-24.4-6.6-43.6-19.7-57.4C151.8-4.3,133.7-11.2,110.5-11.2">
+       </path>
+       <path d="M268.1,41.3h-50.5v87.8c0,26,5.3,45,15.8,56.8c10.5,11.8,29.8,17.7,58,17.7H313v-49.3h-17 c-11.3,0-18.8-2.2-22.5-6.7c-3.7-4.5-5.5-12.2-5.5-23.3V41.3">
+       </path>
+      </g>
+      <path d="M425.9,20.4c3,0,4.9-1.3,4.9-4c0-3-1.9-4.2-4.9-4.2H422v8.2H425.9z M416,6.9h10.5 c6.6,0,10.5,3.5,10.5,9.5c0,4.3-2.7,7.6-6.5,9.1l6.5,11.5h-6.5l-6-10.9H422v10.9h-6V6.9z M445.6,22c0-11.6-8.9-20.7-20.6-20.7 c-11.5,0-20.3,9.1-20.3,20.7c0,11.5,8.8,20.6,20.3,20.6C436.7,42.5,445.6,33.5,445.6,22z M399.9,22c0-14.5,10.9-25.4,25.2-25.4 c14.5,0,25.4,10.9,25.4,25.4c0,14.2-10.9,25.2-25.4,25.2C410.8,47.1,399.9,36.2,399.9,22L399.9,22z">
+      </path>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg><nav><a href="#logo">Logo</a><a href="#color">Color</a><a href="#type">Type</a><a href="#components">Components</a><a href="#motifs">Motifs</a><a href="#concept">Concept</a></nav></div></header>
+
+<div class="hero">
+  <svg class="pattern" viewBox="0 0 480 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g transform="translate(0.0,0.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(58.0,0.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(116.0,0.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(174.0,0.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(232.0,0.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(290.0,0.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(348.0,0.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(406.0,0.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(464.0,0.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(29.0,56.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(87.0,56.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(145.0,56.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(203.0,56.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(261.0,56.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(319.0,56.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(377.0,56.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(435.0,56.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(493.0,56.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(0.0,112.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(58.0,112.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(116.0,112.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(174.0,112.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(232.0,112.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(290.0,112.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(348.0,112.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(406.0,112.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(464.0,112.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(29.0,168.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(87.0,168.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(145.0,168.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(203.0,168.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(261.0,168.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="#BE1D3D"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="#E30045"/></g><g transform="translate(319.0,168.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(377.0,168.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(435.0,168.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(493.0,168.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(0.0,224.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(58.0,224.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(116.0,224.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(174.0,224.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(232.0,224.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(290.0,224.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(348.0,224.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(406.0,224.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(464.0,224.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(29.0,280.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(87.0,280.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(145.0,280.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(203.0,280.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(261.0,280.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(319.0,280.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(377.0,280.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(435.0,280.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(493.0,280.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(0.0,336.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(58.0,336.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(116.0,336.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(174.0,336.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(232.0,336.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(290.0,336.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(348.0,336.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(406.0,336.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(464.0,336.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(29.0,392.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(87.0,392.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(145.0,392.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(203.0,392.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(261.0,392.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(319.0,392.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(377.0,392.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(435.0,392.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g><g transform="translate(493.0,392.0) scale(0.38) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="3.7"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="3.7"/></g></svg>
+  <div class="wrap">
+    <p class="eyebrow">Brand asset &amp; style guide</p>
+    <h1 class="display">A portal that knows your season, and the good you do in it</h1>
+    <p class="lead">The visual system for the Thrivent life-stage portal concept, derived from thrivent.com's live styles and the supplied logos.</p>
+    <p class="meta">Inspected Nov 12, 2026 · thrivent.com home + /generosity/membership · 4 page captures · Concept by Modern Climate. Illustrative only.</p>
+  </div>
+</div>
+
+<section id="character"><div class="wrap">
+  <p class="eyebrow">01 · Character</p>
+  <h2>Warm, calm, and <i>people first</i></h2>
+  <p class="sub">Thrivent's site balances financial credibility with generosity. Generosity stats get the same visual weight as financial ones, and red is used rarely, so it always means "act here."</p>
+  <div class="grid g3">
+    <div class="card"><h3>Warm over corporate</h3><p class="cap">Cream and sand washes alternate with cool mist panels. White is home base.</p></div>
+    <div class="card"><h3>Real people, real impact</h3><p class="cap">Members serving in their communities, in arch and circle crops, with named member quotes.</p></div>
+    <div class="card"><h3>Where Money Means More™</h3><p class="cap">The tagline sits in the gold footer band beside the monogram, linking money to meaning.</p></div>
+  </div>
+</div></section>
+
+<section id="logo" class="alt"><div class="wrap">
+  <p class="eyebrow">02 · Logo</p>
+  <h2>Wordmark and monogram</h2>
+  <p class="sub">Clear space is at least the height of the red cap on all sides. The wordmark is never under 96px wide and the monogram never under 24px tall. Never recolor, stretch or add effects to the mark.</p>
+  <div class="grid g4">
+    <div><div class="logo-tile" style="background:#fff;box-shadow:0 0 0 1px var(--border)"><svg role="img" aria-label="Thrivent" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-908.8 -75 1359.3 293.8">
+ <style type="text/css">
+  .st0{fill:#BE1D3D;}
+	.st1{fill:#E30045;}
+ </style>
+ 
+ 
+ <g>
+  <g transform="translate(-62.000000, -101.000000)">
+   <g>
+    <g transform="translate(62.000000, 101.000000)">
+     <g>
+      <g transform="translate(149.128370, 3.446727)">
+       <path class="st0" d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6">
+       </path>
+       <path class="st1" d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1">
+       </path>
+      </g>
+      <g>
+       <path d="M-908.8-47.4v185.7c0,26,5.3,45,15.8,56.8c10.5,11.8,29.8,17.7,58,17.7h21.7v-49.3h-17 c-11.3,0-18.8-2.2-22.5-6.7c-3.7-4.5-5.5-12.2-5.5-23.3V47.2h52V3.9h-52.8v-51.3H-908.8">
+       </path>
+       <path d="M-674-2c-10.3,0-20.2,2.6-30,7.9c-9.7,5.3-16.7,11.3-20.9,18.1h-0.8v-99h-51.3v287.9h51.3V81.5 c0-10.8,3.1-19.5,9.3-26.2c6.2-6.7,15.2-10.1,27-10.1c12.4,0,21.6,3.7,27.8,11.2c6.2,7.5,9.3,17,9.3,28.6v127.8h51.3V73.7 c0-23.1-6.6-41.5-19.7-55.2C-633.9,4.8-651.6-2-674-2">
+       </path>
+      </g>
+      <path d="M-498.7,7c-7.8,4.7-13.6,11-17.6,18.9h-0.8V3.9h-48.5v209h51.3V98.1c0-31.8,12-47.7,35.9-47.7 c5,0,10.4,1.1,16.2,3.2l7.9-49.7c-6-2.6-12.4-3.9-18.9-3.9C-482.5-0.1-490.9,2.3-498.7,7">
+      </path>
+      <g transform="translate(59.743261, 0.000000)">
+       <polygon points="-488.6,212.9 -437.3,212.9 -437.3,3.9 -488.6,3.9">
+       </polygon>
+       <polygon points="-488.6,-26.5 -437.3,-26.5 -437.3,-75 -488.6,-75">
+       </polygon>
+      </g>
+      <g transform="translate(69.164313, 9.191271)">
+       <polyline points="-317.1,129.1 -317.9,129.1 -369.9,-5.3 -423.2,-5.3 -339.6,203.7 -296.2,203.7 -212.6,-5.3  -265.1,-5.3 -317.1,129.1">
+       </polyline>
+       <path d="M-116.2-11.2c-27.9,0-50.9,10.1-69.2,30.2c-18.3,20.1-27.4,46.9-27.4,80.2c0,33.4,9.2,60.1,27.6,80.2 c18.4,20.1,42.2,30.2,71.4,30.2c36.3,0,65.1-15.5,86.4-46.5l-35.9-31.5c-6.8,10-14.1,17.9-21.9,23.9 c-7.8,5.9-17.5,8.9-29.4,8.9c-13.9,0-24.9-4.3-32.9-12.8c-8-8.5-12.4-20.8-13.2-36.9h140.4V99.2c0-33.4-9-60.1-27-80.2 C-65.4-1.2-88.3-11.2-116.2-11.2 M-160.8,76.3c1.1-12.1,5.6-22.2,13.6-30.4c8-8.1,18.3-12.2,31-12.2 c13.7,0,24.5,3.7,32.3,11.2c7.9,7.5,12.5,17.9,13.8,31.3H-160.8">
+       </path>
+       <path d="M110.5-11.2c-11,0-21.6,2.5-31.5,7.5c-10,5-17.9,11.2-23.7,18.5h-0.8V-5.3H5.2v209h51.3V75.9 c0-12.1,3.5-21.7,10.6-29c7.1-7.2,17-10.8,29.6-10.8c13.4,0,22.9,3.6,28.4,10.8c5.5,7.2,8.3,18.1,8.3,32.5v124.2h51.3V66.8 c0-24.4-6.6-43.6-19.7-57.4C151.8-4.3,133.7-11.2,110.5-11.2">
+       </path>
+       <path d="M268.1,41.3h-50.5v87.8c0,26,5.3,45,15.8,56.8c10.5,11.8,29.8,17.7,58,17.7H313v-49.3h-17 c-11.3,0-18.8-2.2-22.5-6.7c-3.7-4.5-5.5-12.2-5.5-23.3V41.3">
+       </path>
+      </g>
+      <path d="M425.9,20.4c3,0,4.9-1.3,4.9-4c0-3-1.9-4.2-4.9-4.2H422v8.2H425.9z M416,6.9h10.5 c6.6,0,10.5,3.5,10.5,9.5c0,4.3-2.7,7.6-6.5,9.1l6.5,11.5h-6.5l-6-10.9H422v10.9h-6V6.9z M445.6,22c0-11.6-8.9-20.7-20.6-20.7 c-11.5,0-20.3,9.1-20.3,20.7c0,11.5,8.8,20.6,20.3,20.6C436.7,42.5,445.6,33.5,445.6,22z M399.9,22c0-14.5,10.9-25.4,25.2-25.4 c14.5,0,25.4,10.9,25.4,25.4c0,14.2-10.9,25.2-25.4,25.2C410.8,47.1,399.9,36.2,399.9,22L399.9,22z">
+      </path>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg></div><p class="cap"><b>Wordmark · color</b>thrivent-wordmark-color.svg / .png</p></div>
+    <div><div class="logo-tile" style="background:var(--navy)"><svg role="img" aria-label="Thrivent" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-908.8 53.5 1359.3 293.8">
+ <style type="text/css">
+  .st0{fill:#BE1D3D;}
+	.st1{fill:#E30045;}
+	.st2{fill:#FFFFFF;}
+ </style>
+ 
+ 
+ <g>
+  <g transform="translate(-62.000000, -101.000000)">
+   <g>
+    <g transform="translate(62.000000, 101.000000)">
+     <g>
+      <g transform="translate(149.128370, 3.446727)">
+       <path class="st0" d="M188.1,131.1v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V131.1">
+       </path>
+       <path class="st1" d="M182.1,175.6h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1">
+       </path>
+      </g>
+      <g>
+       <path class="st2" d="M-908.8,81.2v185.7c0,26,5.3,45,15.8,56.8c10.5,11.8,29.8,17.7,58,17.7h21.7v-49.3h-17 c-11.3,0-18.8-2.2-22.5-6.7c-3.7-4.5-5.5-12.2-5.5-23.3v-86.4h52v-43.4h-52.8V81.2H-908.8">
+       </path>
+       <path class="st2" d="M-674,126.5c-10.3,0-20.2,2.6-30,7.9c-9.7,5.3-16.7,11.3-20.9,18.1h-0.8v-99h-51.3v287.9 h51.3V210.1c0-10.8,3.1-19.5,9.3-26.2c6.2-6.7,15.2-10.1,27-10.1c12.4,0,21.6,3.7,27.8,11.2c6.2,7.5,9.3,17,9.3,28.6v127.8 h51.3V202.2c0-23.1-6.6-41.5-19.7-55.2C-633.9,133.3-651.6,126.5-674,126.5">
+       </path>
+      </g>
+      <path class="st2" d="M-498.7,135.6c-7.8,4.7-13.6,11-17.6,18.9h-0.8v-22.1h-48.5v209h51.3V226.7 c0-31.8,12-47.7,35.9-47.7c5,0,10.4,1.1,16.2,3.2l7.9-49.7c-6-2.6-12.4-3.9-18.9-3.9C-482.5,128.5-490.9,130.8-498.7,135.6">
+      </path>
+      <g transform="translate(59.743261, 0.000000)">
+       <polygon class="st2" points="-488.6,341.4 -437.3,341.4 -437.3,132.4 -488.6,132.4">
+       </polygon>
+       <polygon class="st2" points="-488.6,102.1 -437.3,102.1 -437.3,53.5 -488.6,53.5">
+       </polygon>
+      </g>
+      <g transform="translate(69.164313, 9.191271)">
+       <polyline class="st2" points="-317.1,257.7 -317.9,257.7 -369.9,123.2 -423.2,123.2 -339.6,332.2 -296.2,332.2  -212.6,123.2 -265.1,123.2 -317.1,257.7">
+       </polyline>
+       <path class="st2" d="M-116.2,117.3c-27.9,0-50.9,10.1-69.2,30.2c-18.3,20.1-27.4,46.9-27.4,80.2 c0,33.4,9.2,60.1,27.6,80.2c18.4,20.1,42.2,30.2,71.4,30.2c36.3,0,65.1-15.5,86.4-46.5L-63.4,260c-6.8,10-14.1,17.9-21.9,23.9 c-7.8,5.9-17.5,8.9-29.4,8.9c-13.9,0-24.9-4.3-32.9-12.8c-8-8.5-12.4-20.8-13.2-36.9h140.4v-15.4c0-33.4-9-60.1-27-80.2 C-65.4,127.4-88.3,117.3-116.2,117.3 M-160.8,204.8c1.1-12.1,5.6-22.2,13.6-30.4c8-8.1,18.3-12.2,31-12.2 c13.7,0,24.5,3.7,32.3,11.2c7.9,7.5,12.5,17.9,13.8,31.3H-160.8">
+       </path>
+       <path class="st2" d="M110.5,117.3c-11,0-21.6,2.5-31.5,7.5c-10,5-17.9,11.2-23.7,18.5h-0.8v-20.1H5.2v209h51.3 V204.5c0-12.1,3.5-21.7,10.6-29c7.1-7.2,17-10.8,29.6-10.8c13.4,0,22.9,3.6,28.4,10.8c5.5,7.2,8.3,18.1,8.3,32.5v124.2h51.3 V195.4c0-24.4-6.6-43.6-19.7-57.4C151.8,124.2,133.7,117.3,110.5,117.3">
+       </path>
+       <path class="st2" d="M268.1,169.9h-50.5v87.8c0,26,5.3,45,15.8,56.8c10.5,11.8,29.8,17.7,58,17.7H313v-49.3h-17 c-11.3,0-18.8-2.2-22.5-6.7c-3.7-4.5-5.5-12.2-5.5-23.3V169.9">
+       </path>
+      </g>
+      <path class="st2" d="M425.9,148.9c3,0,4.9-1.3,4.9-4c0-3-1.9-4.2-4.9-4.2H422v8.2H425.9z M416,135.4h10.5 c6.6,0,10.5,3.5,10.5,9.5c0,4.3-2.7,7.6-6.5,9.1l6.5,11.5h-6.5l-6-10.9H422v10.9h-6V135.4z M445.6,150.5 c0-11.6-8.9-20.7-20.6-20.7c-11.5,0-20.3,9.1-20.3,20.7c0,11.5,8.8,20.6,20.3,20.6C436.7,171.1,445.6,162,445.6,150.5z  M399.8,150.5c0-14.5,10.9-25.4,25.2-25.4c14.5,0,25.4,10.9,25.4,25.4c0,14.2-10.9,25.2-25.4,25.2 C410.8,175.7,399.8,164.7,399.8,150.5L399.8,150.5z">
+      </path>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg></div><p class="cap"><b>Wordmark · reversed</b>thrivent-wordmark-reversed.svg / .png</p></div>
+    <div><div class="logo-tile mono" style="background:var(--cream);box-shadow:0 0 0 1px var(--border)"><svg role="img" aria-label="Thrivent" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-273.5 41 120.9 321.5">
+ <style type="text/css">
+  .st0{fill:#BE1D3D;}
+	.st1{fill:#E30045;}
+ </style>
+ 
+ 
+ <g>
+  <g transform="translate(-62.000000, -101.000000)">
+   <g>
+    <g transform="translate(62.000000, 101.000000)">
+     <g>
+      <g transform="translate(149.128370, 3.446727)">
+       <path class="st0" d="M-360.3,103.5V66.8c0-16.2-15-29.3-31.2-29.3c-16.2,0-31.2,13.1-31.2,29.3v91.7h62.4V103.5">
+       </path>
+       <path class="st1" d="M-367.6,158.5h36.7c16.2,0,29.3-15,29.3-31.2c0-16.2-13.1-31.2-29.3-31.2h-91.7v62.4H-367.6">
+       </path>
+      </g>
+      <g transform="translate(69.164313, 9.191271)">
+       <path d="M-280.3,152.8h-62.4v108.5c0,32.2,6.5,55.6,19.5,70.2c13,14.6,36.9,21.9,71.6,21.9h26.8v-60.9h-21 c-14,0-23.2-2.8-27.8-8.3c-4.6-5.5-6.8-15.1-6.8-28.8V152.8">
+       </path>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg></div><p class="cap"><b>Monogram</b>thrivent-monogram-t.svg / -512.png</p></div>
+    <div><div class="logo-tile mono" style="background:var(--navy)"><svg role="img" aria-label="Thrivent" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-273.5 41 120.9 321.5">
+ <style type="text/css">
+  .st0{fill:#BE1D3D;}
+	.st1{fill:#E30045;}
+	.st2{fill:#FFFFFF;}
+ </style>
+ 
+ 
+ <g>
+  <g transform="translate(-62.000000, -101.000000)">
+   <g>
+    <g transform="translate(62.000000, 101.000000)">
+     <g>
+      <g transform="translate(149.128370, 3.446727)">
+       <path class="st0" d="M-360.3,103.5V66.8c0-16.2-15-29.3-31.2-29.3c-16.2,0-31.2,13.1-31.2,29.3v91.7h62.4V103.5">
+       </path>
+       <path class="st1" d="M-367.6,158.5h36.7c16.2,0,29.3-15,29.3-31.2c0-16.2-13.1-31.2-29.3-31.2h-91.7v62.4H-367.6">
+       </path>
+      </g>
+      <g transform="translate(69.164313, 9.191271)">
+       <path class="st2" d="M-280.3,152.8h-62.4v108.5c0,32.2,6.5,55.6,19.5,70.2c13,14.6,36.9,21.9,71.6,21.9h26.8v-60.9h-21 c-14,0-23.2-2.8-27.8-8.3c-4.6-5.5-6.8-15.1-6.8-28.8V152.8">
+       </path>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg></div><p class="cap"><b>Monogram · reversed</b>thrivent-monogram-t-reversed.svg</p></div>
+  </div>
+  <div class="grid g2" style="margin-top:32px">
+    <div class="band" style="border-radius:8px"><div class="wrap" style="padding:0 24px"><svg role="img" aria-label="Thrivent" style="height:36px;width:auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-273.5 41 120.9 321.5">
+ <style type="text/css">
+  .st0{fill:#BE1D3D;}
+	.st1{fill:#E30045;}
+ </style>
+ 
+ 
+ <g>
+  <g transform="translate(-62.000000, -101.000000)">
+   <g>
+    <g transform="translate(62.000000, 101.000000)">
+     <g>
+      <g transform="translate(149.128370, 3.446727)">
+       <path class="st0" d="M-360.3,103.5V66.8c0-16.2-15-29.3-31.2-29.3c-16.2,0-31.2,13.1-31.2,29.3v91.7h62.4V103.5">
+       </path>
+       <path class="st1" d="M-367.6,158.5h36.7c16.2,0,29.3-15,29.3-31.2c0-16.2-13.1-31.2-29.3-31.2h-91.7v62.4H-367.6">
+       </path>
+      </g>
+      <g transform="translate(69.164313, 9.191271)">
+       <path d="M-280.3,152.8h-62.4v108.5c0,32.2,6.5,55.6,19.5,70.2c13,14.6,36.9,21.9,71.6,21.9h26.8v-60.9h-21 c-14,0-23.2-2.8-27.8-8.3c-4.6-5.5-6.8-15.1-6.8-28.8V152.8">
+       </path>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg><span>Where Money Means More<sup style="font-size:10px">TM</sup></span></div></div>
+    <div class="legacy card"><img src="data:image/jpeg;base64,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SPu7VAiKy7Bx3WS/p0cnrUzRw8lmZ4Dn9Hv6bEPkPgzdbdd4xb2Iy57u9rAjTL4dPI4bIp6k0ImOOHihYCVcikvM2FyNt2CsBK1hpck05PvdgdYRmNTxLxPkCEjkS3yNhAwklwF/rrvOG9H9YfW9PIMV66ejSX2yLjvr24JrZB87OLAeQz54vPd4Kl2XnNYE1jfWBnDyfTPepKCBmtRBPOm+xaV3C70ndofbAMVrA7/EHA37iQ0nAIOl6abzi2Dnr5Hvs3VdY/4OW7t5OOf6HyJNJQZlX5xnwPHdRTmLi1Y6iXVm9di7oIauR1qfsCarurh3KZtXh7+T75VjqU+K6Ox3PzMQu8j32f5zLO/tuirE9ehw1aJsCALB5SRiOJ3dSlcgcQs67cfIA1Wo2s11HrszClOTd3nchzRxc1ofdBeGAYB5aRiOJ3dSokTiWT+y2rcHzO3z22SSu77HeKVVVlbu4IpRi58Jw40F4YBgHmA12jmtTjUZFeEYPB0dnCEDnvog5bMqPxDmm4VvBtv0KJu0AgDzRKVihMQ36H28ccgct/YNqbL3a4vc6bRiwV16X3+tGBB4s4pggx6VxFBnoPmGRkIRzpcX3Hl+5UFIiJcajb+ac56bKgS4FIpkvouGzZlHQLmwfDx47CWMSX6yenGocaww9mnn48BIcrXMPUrA/wDUKZ/tPMz0GiMPS+atBCevHZxghCXFwO7s2FTh8Hpq1fm/k+2yhNkadcfpq5x6LndpqwMARBizzZ6VG2oEshk/tfP/AIek/DxQoEAlasgLjX9XwUfQIBAbRxfqI0bw8CWBGHfWr69gUN+dKxIsfWfP4AzX7B8+EkzMq/ozq9gIxL+v/KaMPrknS+lRsTy8Hp/yi//aAAwDAQACAAMAAAAQ88888888888888888888888888888888888888888888888888888888888888888888888880+368888889352888888858/wDPPuP/ADzza/zy1jTzzzzw7zzzzzzyzv7zzl1zyzfzzzv/AM88888888884f3888Q888588888888888+d/c888s888/8APPPPPNDnvXXfDzD735PPPKd/PPPKgPzDMvOP9/8Azzzzzzxzzzzzzzzzn39zzzxwzzzzzyn7zzzzzzyXxzzzzzw/zzzzzyrzzzzzybz/AM88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" alt="Legacy heart-cross mark"><div><h3 style="margin:0">Legacy heart-cross mark</h3><p class="cap" style="margin:4px 0 0">Retired. Included in <code>logos/legacy/</code> for reference only. Do not use.</p></div></div>
+  </div>
+</div></section>
+
+<section id="color"><div class="wrap">
+  <p class="eyebrow">03 · Color</p>
+  <h2>Mostly warm and light; red used once</h2>
+  <p class="sub">Values below are computed styles from thrivent.com. Ratio guide: about 70% white, cream or sand · 20% mist or navy sections · 10% accents · red once per screen at most.</p>
+  <div class="ratio"><div style="flex:40;background:#fff"></div><div style="flex:30;background:var(--cream)"></div><div style="flex:12;background:var(--mist)"></div><div style="flex:8;background:var(--navy)"></div><div style="flex:7;background:var(--blue)"></div><div style="flex:3;background:var(--red)"></div></div>
+  <p class="grouplabel">Core</p><div class="grid g6"><div class="sw"><div class="chip" style="background:#BE1D3D"></div><div class="info"><b>Red</b><code>#BE1D3D</code><br>Primary CTA only · logo cap</div></div><div class="sw"><div class="chip" style="background:#E30045"></div><div class="info"><b>Red bright</b><code>#E30045</code><br>Logo cap only</div></div><div class="sw"><div class="chip" style="background:#131415"></div><div class="info"><b>Ink</b><code>#131415</code><br>Text & headlines</div></div><div class="sw"><div class="chip" style="background:#0069A8"></div><div class="info"><b>Blue</b><code>#0069A8</code><br>Links · icons</div></div><div class="sw"><div class="chip" style="background:#1A4C6B"></div><div class="info"><b>Blue 700</b><code>#1A4C6B</code><br>Secondary headings</div></div><div class="sw"><div class="chip" style="background:#27455C"></div><div class="info"><b>Navy</b><code>#27455C</code><br>Dark sections</div></div></div><p class="grouplabel">Warm neutrals</p><div class="grid g6"><div class="sw"><div class="chip" style="background:#FDFAF5"></div><div class="info"><b>Cream</b><code>#FDFAF5</code><br>Page wash</div></div><div class="sw"><div class="chip" style="background:#FAF3E5"></div><div class="info"><b>Sand 100</b><code>#FAF3E5</code><br>Warm panels</div></div><div class="sw"><div class="chip" style="background:#F9ECD7"></div><div class="info"><b>Sand 200</b><code>#F9ECD7</code><br>Quote cards</div></div><div class="sw"><div class="chip" style="background:#F6E2C1"></div><div class="info"><b>Gold band</b><code>#F6E2C1</code><br>Tagline band · quote disc</div></div><div class="sw"><div class="chip" style="background:#193C51"></div><div class="info"><b>Navy 800</b><code>#193C51</code><br>Deep panels</div></div><div class="sw"><div class="chip" style="background:#0C1C25"></div><div class="info"><b>Navy 900</b><code>#0C1C25</code><br>Overlays</div></div></div><p class="grouplabel">Cool neutrals & text</p><div class="grid g6"><div class="sw"><div class="chip" style="background:#D7E5E7"></div><div class="info"><b>Mist</b><code>#D7E5E7</code><br>Stats band · hero panels</div></div><div class="sw"><div class="chip" style="background:#F5F8F9"></div><div class="info"><b>Fog</b><code>#F5F8F9</code><br>Light sections</div></div><div class="sw"><div class="chip" style="background:#CBD3D8"></div><div class="info"><b>Border</b><code>#CBD3D8</code><br>Card rings · dividers</div></div><div class="sw"><div class="chip" style="background:#97A8B3"></div><div class="info"><b>Border strong</b><code>#97A8B3</code><br>Inputs</div></div><div class="sw"><div class="chip" style="background:#2B363F"></div><div class="info"><b>Slate</b><code>#2B363F</code><br>Body on light</div></div><div class="sw"><div class="chip" style="background:#606B71"></div><div class="info"><b>Muted</b><code>#606B71</code><br>Captions · legal</div></div></div>
+</div></section>
+
+<section id="type" class="alt"><div class="wrap">
+  <p class="eyebrow">04 · Typography</p>
+  <h2>Light display, bold sections, a serif voice</h2>
+  <p class="sub">thrivent.com uses proprietary <b>Basis Grotesque for Thrivent</b> (sans) and <b>Burgess for Thrivent</b> (serif). The concept uses the free fallbacks the site also loads, <b>Inter</b> and <b>Libre Baskerville</b>, unless Thrivent supplies its font files. Sentence case throughout.</p>
+  <div class="trow"><div class="spec"><b>Display · light</b>Sans 54/56 · 300<br>Hero h1</div><div style="font-size:54px;line-height:56px;font-weight:300">Membership that supports you</div></div><div class="trow"><div class="spec"><b>Stat</b>Sans 54/56 · 700<br>Impact numbers</div><div style="font-size:54px;line-height:56px;font-weight:700">2.4M</div></div><div class="trow"><div class="spec"><b>H2</b>Sans 44/48 · 700 + serif italic accent<br>Section titles</div><div style="font-size:44px;line-height:48px;font-weight:700">Real impact made by <i style="font-family:var(--serif);font-weight:800">real people</i></div></div><div class="trow"><div class="spec"><b>H2 small</b>Sans 32/40 · 700<br></div><div style="font-size:32px;line-height:40px;font-weight:700">Members take meaningful action</div></div><div class="trow"><div class="spec"><b>Quote</b>Serif 32/40 · 700<br>Member pull quotes</div><div style="font-family:var(--serif);font-size:32px;line-height:40px;font-weight:700">“It started with one food drive.”</div></div><div class="trow"><div class="spec"><b>H3</b>Sans 20/28 · 700<br>Card titles</div><div style="font-size:20px;line-height:28px;font-weight:700">Grief care resources</div></div><div class="trow"><div class="spec"><b>Lead</b>Sans 20/28 · 400<br>Intros</div><div style="font-size:20px;line-height:28px;font-weight:400">We combine expert financial support with a membership program.</div></div><div class="trow"><div class="spec"><b>Body</b>Sans 16/24 · 400<br></div><div style="font-size:16px;line-height:24px">Hosting an action team is simple and fun. We provide the resources and seed money to get you started.</div></div><div class="trow"><div class="spec"><b>Eyebrow</b>Sans 16 · 700 · +2px · caps<br>Site uses 20px</div><div style="font-size:16px;line-height:16px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#454B4F">Thrivent Action Teams</div></div><div class="trow"><div class="spec"><b>Small / Legal</b>Sans 13/19.5 · 12/16<br>Captions · disclosures</div><div style="font-size:13px;line-height:19.5px;color:#606B71">Member benefits and programs are not guaranteed contractual benefits.</div></div>
+</div></section>
+
+<section id="components"><div class="wrap">
+  <p class="eyebrow">05 · Components</p>
+  <h2>Building blocks from the site</h2>
+  <p class="sub">Specs are measured from thrivent.com. Use them literally inside the portal mockup so it reads as Thrivent.</p>
+  <p class="grouplabel">Buttons &amp; links</p>
+  <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center">
+    <a class="btn btn-primary" href="#components">Start a conversation today</a>
+    <a class="btn btn-pill" href="#components">Browse financial advisors</a>
+    <a class="btn btn-secondary" href="#components">Browse recent projects →</a>
+    <span class="panel-dark" style="padding:16px"><a class="btn btn-ondark" href="#components">Get started</a></span>
+    <a class="link" href="#components">See all membership benefits →</a>
+  </div>
+  <p class="cap">Primary: #BE1D3D, 16/700, radius 6, 16–20 × 24 · Pill: radius 1000, 18/500, 12 × 24 · Secondary: 2px #1A4C6B ring · On dark: #F9ECD7 · Link: #0069A8, trailing arrow · Focus: 2px #17628F ring</p>
+
+  <p class="grouplabel">Quote card</p>
+  <div class="quote">
+    <div class="q"><div class="qmark">“</div><blockquote>Serving with neighbors has become what our family does. It is how we show up for each other.</blockquote><div class="who"><b>Kari Halvorsen</b>, member (fictional persona)</div></div>
+    <div class="photo"><span>Photo: member serving in community (arch or straight crop)</span></div>
+  </div>
+  <p class="cap">Sand #F9ECD7 panel · gold #F6E2C1 quote disc · serif 28–32/700 · attribution in sans 16. Use fictional persona quotes in the concept; the site uses named real members.</p>
+
+  <p class="grouplabel">Impact stats band</p>
+  <div class="stats">
+    <div class="stat"><div class="n">2.4M</div><div class="l">volunteers powered 190,000 Thrivent Action Teams in 2025<sup>1</sup></div></div>
+    <div class="stat"><div class="n">1.5M</div><div class="l">projects led by members since 2014<sup>1</sup></div></div>
+    <div class="stat"><div class="n">$2.5B</div><div class="l">raised through Thrivent Action Teams since 2014<sup>1</sup></div></div>
+  </div>
+  <p class="cap">Mist #D7E5E7 band · 54/700 numbers · 13px labels with footnote markers. Figures as shown on thrivent.com/generosity/membership.</p>
+
+  <div class="grid g2" style="margin-top:32px">
+    <div><p class="grouplabel" style="margin-top:0">Feature card</p><div class="feature"><h4>Dedicated planning</h4><p style="margin:0">Work with an advisor to turn your goals into a clear, actionable path forward.</p><span class="arrowdisc">→</span></div></div>
+    <div><p class="grouplabel" style="margin-top:0">Tags &amp; card ring</p><div class="card"><h3 style="color:var(--blue)">Michael Meader ›</h3><p class="cap" style="margin-top:0">Financial Advisor · Minneapolis, MN</p><div class="tags"><span>Tax Efficient Planning</span><span>Young Families</span><span>Retirement Planning</span></div></div></div>
+  </div>
+
+  <p class="grouplabel">Benefit tiles (scattered)</p>
+  <div class="tiles">
+    <div class="tile"><div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1A4C6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg></div>Habitat and Thrivent Partnership</div>
+    <div class="tile"><div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1A4C6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 11V6a1.5 1.5 0 013 0v4"/><path d="M10 10V4.5a1.5 1.5 0 013 0V10"/><path d="M13 10V6a1.5 1.5 0 013 0v7c0 4-2.5 7-6 7s-5-2-6-4l-2-4a1.5 1.5 0 012.6-1.5L7 13"/></svg></div>Thrivent Choice®</div>
+    <div class="tile"><div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1A4C6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.5"/><path d="M2.5 20c.5-3.5 3-5.5 5.5-5.5s5 2 5.5 5.5"/><path d="M14 15c2.5-.5 6 .5 7 4"/></svg></div>Community &amp; learning</div>
+    <div class="tile"><div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1A4C6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>Identity monitoring &amp; protection</div>
+  </div>
+  <p class="cap">White tiles at ±3–6° on a sand field · line icons (1.5px) in mist circles. The playful scatter is used on the membership page.</p>
+</div></section>
+
+<section id="motifs" class="alt"><div class="wrap">
+  <p class="eyebrow">06 · Motifs, layout &amp; imagery</p>
+  <h2>The monogram pattern and the arch</h2>
+  <div class="grid g3">
+    <div class="card" style="padding:0;overflow:hidden"><svg viewBox="0 0 360 200" style="display:block;width:100%;background:var(--cream)"><g transform="translate(0.0,0.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(48.0,0.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(96.0,0.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(144.0,0.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(192.0,0.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(240.0,0.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(288.0,0.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(336.0,0.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(24.0,50.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(72.0,50.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(120.0,50.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(168.0,50.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="#BE1D3D"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="#E30045"/></g><g transform="translate(216.0,50.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(264.0,50.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(312.0,50.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(360.0,50.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(0.0,100.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(48.0,100.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(96.0,100.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(144.0,100.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(192.0,100.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(240.0,100.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(288.0,100.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(336.0,100.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(24.0,150.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(72.0,150.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(120.0,150.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(168.0,150.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(216.0,150.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(264.0,150.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(312.0,150.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g><g transform="translate(360.0,150.0) scale(0.32) translate(-137,50)"><path d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6" fill="none" stroke="#E9C98F" stroke-width="4.4"/><path d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1" fill="none" stroke="#E9C98F" stroke-width="4.4"/></g></svg><div style="padding:20px"><h3>Monogram pattern</h3><p class="cap" style="margin:0">The t-cap shape in thin gold outline on cream, with one filled red accent. Used behind heroes.</p></div></div>
+    <div class="card" style="padding:0;overflow:hidden"><svg viewBox="0 0 360 200" style="display:block;width:100%;background:var(--mist)"><path d="M90 200 V120 A90 90 0 0 1 270 120 V200 Z" fill="#7F9AA8"/><circle cx="292" cy="150" r="34" fill="#fff"/><text x="292" y="148" text-anchor="middle" font-size="14" font-weight="700" font-family="Inter">17.9M</text><text x="292" y="163" text-anchor="middle" font-size="7" font-family="Inter">volunteer hours</text></svg><div style="padding:20px"><h3>Arch &amp; circle crops</h3><p class="cap" style="margin:0">Hero photos as large arches; stat callouts in white circles overlapping the photo.</p></div></div>
+    <div class="card"><h3>Layout</h3><p class="cap" style="margin:0">Container 1248px (wide 1408px) · 64–96px between sections · backgrounds alternate white → mist → white → sand → navy · radius 4 / 6 / 8 / 16 / pill · card shadow <code>0 8px 16px -4px rgba(0,0,0,.08)</code></p><h3 style="margin-top:20px">Imagery</h3><p class="cap" style="margin:0">Candid, multigenerational, natural light, people serving. For the concept, use illustrated avatars or licensed photos; don't reuse photos of real members from the site.</p></div>
+  </div>
+</div></section>
+
+<section id="concept"><div class="wrap">
+  <p class="eyebrow">07 · Applying it to the presentation</p>
+  <h2>Concept extensions</h2>
+  <p class="sub">These tokens are Modern Climate additions for the life-stage presentation. They are derived to sit comfortably with the brand palette but are <b>not</b> Thrivent brand colors.</p>
+  <p class="grouplabel">Nurture audience markers</p>
+  <div class="markers"><div class="sw"><div class="chip" style="background:#0069A8;height:56px"></div><div class="info"><b>Member</b><code>#0069A8</code></div></div><div class="sw"><div class="chip" style="background:#2E7D73;height:56px"></div><div class="info"><b>Guest</b><code>#2E7D73</code></div></div><div class="sw"><div class="chip" style="background:#B9822A;height:56px"></div><div class="info"><b>Leader</b><code>#B9822A</code></div></div><div class="sw"><div class="chip" style="background:#5B4F8F;height:56px"></div><div class="info"><b>Advisor</b><code>#5B4F8F</code></div></div><div class="sw"><div class="chip" style="background:#2A8FB8;height:56px"></div><div class="info"><b>Next-gen</b><code>#2A8FB8</code></div></div><div class="sw"><div class="chip" style="background:#97A8B3;height:56px"></div><div class="info"><b>Quiet</b><code>#97A8B3</code></div></div></div>
+  <p class="grouplabel">Wiring chips</p>
+  <div><span class="wire">● declared: caregiving</span><span class="wire">● ZIP 55417 → Twin Cities Member Network</span><span class="wire">● led 6 teams</span><span class="wire">● age 65+</span></div>
+  <p class="cap">12/600 · #1A4C6B on #BEDBED · pill · 1px dotted connector to the module it explains.</p>
+  <p class="grouplabel">Act 2 layout preview</p>
+  <div class="demo">
+    <div class="rail">
+      <div class="count">1,284</div><div class="countl">hours of household impact</div>
+      <ol>
+        <li>The guest · 24<span class="m" style="background:#2E7D73"></span></li>
+        <li>Starting out · 26<span class="m" style="background:#6FB3E0"></span></li>
+        <li>Partnership &amp; family · 31<span class="m" style="background:#6FB3E0"></span></li>
+        <li class="on">Leading · 38<span class="m" style="background:#B9822A"></span><span class="m" style="background:#B9822A"></span></li>
+        <li>Caregiving years · 52<span class="m" style="background:#5B4F8F"></span></li>
+        <li>Retirement · 66</li>
+        <li>Loss &amp; legacy · 74</li>
+      </ol>
+    </div>
+    <div class="stage"><div class="browser">
+      <div class="bar"><i></i><i></i><i></i></div>
+      <div class="ph"><svg role="img" aria-label="Thrivent" style="height:14px;width:auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-908.8 -75 1359.3 293.8">
+ <style type="text/css">
+  .st0{fill:#BE1D3D;}
+	.st1{fill:#E30045;}
+ </style>
+ 
+ 
+ <g>
+  <g transform="translate(-62.000000, -101.000000)">
+   <g>
+    <g transform="translate(62.000000, 101.000000)">
+     <g>
+      <g transform="translate(149.128370, 3.446727)">
+       <path class="st0" d="M188.1,2.6v-29.7c0-13.1-12.2-23.7-25.2-23.7c-13.1,0-25.2,10.6-25.2,23.7v74.2h50.5V2.6">
+       </path>
+       <path class="st1" d="M182.1,47.1h29.7c13.1,0,23.7-12.2,23.7-25.2c0-13.1-10.6-25.2-23.7-25.2h-74.2v50.5H182.1">
+       </path>
+      </g>
+      <g>
+       <path d="M-908.8-47.4v185.7c0,26,5.3,45,15.8,56.8c10.5,11.8,29.8,17.7,58,17.7h21.7v-49.3h-17 c-11.3,0-18.8-2.2-22.5-6.7c-3.7-4.5-5.5-12.2-5.5-23.3V47.2h52V3.9h-52.8v-51.3H-908.8">
+       </path>
+       <path d="M-674-2c-10.3,0-20.2,2.6-30,7.9c-9.7,5.3-16.7,11.3-20.9,18.1h-0.8v-99h-51.3v287.9h51.3V81.5 c0-10.8,3.1-19.5,9.3-26.2c6.2-6.7,15.2-10.1,27-10.1c12.4,0,21.6,3.7,27.8,11.2c6.2,7.5,9.3,17,9.3,28.6v127.8h51.3V73.7 c0-23.1-6.6-41.5-19.7-55.2C-633.9,4.8-651.6-2-674-2">
+       </path>
+      </g>
+      <path d="M-498.7,7c-7.8,4.7-13.6,11-17.6,18.9h-0.8V3.9h-48.5v209h51.3V98.1c0-31.8,12-47.7,35.9-47.7 c5,0,10.4,1.1,16.2,3.2l7.9-49.7c-6-2.6-12.4-3.9-18.9-3.9C-482.5-0.1-490.9,2.3-498.7,7">
+      </path>
+      <g transform="translate(59.743261, 0.000000)">
+       <polygon points="-488.6,212.9 -437.3,212.9 -437.3,3.9 -488.6,3.9">
+       </polygon>
+       <polygon points="-488.6,-26.5 -437.3,-26.5 -437.3,-75 -488.6,-75">
+       </polygon>
+      </g>
+      <g transform="translate(69.164313, 9.191271)">
+       <polyline points="-317.1,129.1 -317.9,129.1 -369.9,-5.3 -423.2,-5.3 -339.6,203.7 -296.2,203.7 -212.6,-5.3  -265.1,-5.3 -317.1,129.1">
+       </polyline>
+       <path d="M-116.2-11.2c-27.9,0-50.9,10.1-69.2,30.2c-18.3,20.1-27.4,46.9-27.4,80.2c0,33.4,9.2,60.1,27.6,80.2 c18.4,20.1,42.2,30.2,71.4,30.2c36.3,0,65.1-15.5,86.4-46.5l-35.9-31.5c-6.8,10-14.1,17.9-21.9,23.9 c-7.8,5.9-17.5,8.9-29.4,8.9c-13.9,0-24.9-4.3-32.9-12.8c-8-8.5-12.4-20.8-13.2-36.9h140.4V99.2c0-33.4-9-60.1-27-80.2 C-65.4-1.2-88.3-11.2-116.2-11.2 M-160.8,76.3c1.1-12.1,5.6-22.2,13.6-30.4c8-8.1,18.3-12.2,31-12.2 c13.7,0,24.5,3.7,32.3,11.2c7.9,7.5,12.5,17.9,13.8,31.3H-160.8">
+       </path>
+       <path d="M110.5-11.2c-11,0-21.6,2.5-31.5,7.5c-10,5-17.9,11.2-23.7,18.5h-0.8V-5.3H5.2v209h51.3V75.9 c0-12.1,3.5-21.7,10.6-29c7.1-7.2,17-10.8,29.6-10.8c13.4,0,22.9,3.6,28.4,10.8c5.5,7.2,8.3,18.1,8.3,32.5v124.2h51.3V66.8 c0-24.4-6.6-43.6-19.7-57.4C151.8-4.3,133.7-11.2,110.5-11.2">
+       </path>
+       <path d="M268.1,41.3h-50.5v87.8c0,26,5.3,45,15.8,56.8c10.5,11.8,29.8,17.7,58,17.7H313v-49.3h-17 c-11.3,0-18.8-2.2-22.5-6.7c-3.7-4.5-5.5-12.2-5.5-23.3V41.3">
+       </path>
+      </g>
+      <path d="M425.9,20.4c3,0,4.9-1.3,4.9-4c0-3-1.9-4.2-4.9-4.2H422v8.2H425.9z M416,6.9h10.5 c6.6,0,10.5,3.5,10.5,9.5c0,4.3-2.7,7.6-6.5,9.1l6.5,11.5h-6.5l-6-10.9H422v10.9h-6V6.9z M445.6,22c0-11.6-8.9-20.7-20.6-20.7 c-11.5,0-20.3,9.1-20.3,20.7c0,11.5,8.8,20.6,20.3,20.6C436.7,42.5,445.6,33.5,445.6,22z M399.9,22c0-14.5,10.9-25.4,25.2-25.4 c14.5,0,25.4,10.9,25.4,25.4c0,14.2-10.9,25.2-25.4,25.2C410.8,47.1,399.9,36.2,399.9,22L399.9,22z">
+      </path>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg><span style="font-size:12px;color:var(--blue)">Kari H. ▾</span></div>
+      <div class="pbody">
+        <div class="mini" style="background:var(--mist)"><div style="font-size:10px;letter-spacing:1.5px;font-weight:700;color:var(--eyebrow)">YOUR IMPACT</div><div style="font-size:30px;line-height:34px;font-weight:700;margin:6px 0">312 coats</div>collected by your team of 11, including 7 new neighbors</div>
+        <div class="mini" style="background:var(--sand2)"><b>Leader hub</b><br>Your next team: 1 of 2 left this year<br><span style="display:inline-block;margin-top:10px;background:var(--red);color:#fff;border-radius:6px;padding:6px 10px;font-weight:700">Plan my next team</span></div>
+        <div class="mini" style="box-shadow:0 0 0 1px var(--border)"><b style="color:var(--blue)">Benefits for your season →</b><br>Thrivent Choice · Cause Kit · Identity protection</div>
+        <div class="mini" style="box-shadow:0 0 0 1px var(--border)"><b>Your advisor</b><br>Travis Lee · Shared: causes, teams</div>
+      </div>
+    </div></div>
+  </div>
+  <p class="cap">Navy rail with white type · cream stage · the portal uses literal site components · red appears once (the primary action).</p>
+  <div class="grid g2" style="margin-top:32px">
+    <div class="card" style="background:var(--fog)"><h3>Quiet mode</h3><p class="cap" style="margin:0">Desaturate to fog, cream and muted gray. Collapse to a single centered card. No red, no stats, no asks.</p></div>
+    <div class="card"><h3>Persistent footer</h3><p class="cap" style="margin:0">12px muted: "Concept by Modern Climate · Illustrative only · Not a live Thrivent product."</p></div>
+  </div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <p class="eyebrow">08 · Do &amp; don't</p>
+  <div class="grid g2">
+    <div class="do"><h3>Do</h3><ul><li>Lead with people and community impact</li><li>Use the light-weight display headline</li><li>Pair warm (sand) and cool (mist) neutrals</li><li>Keep red to one action per screen</li><li>Sentence case; arrows on text links</li></ul></div>
+    <div class="dont"><h3>Don't</h3><ul><li>Use the legacy heart-cross mark</li><li>Use #E30045 in UI (logo only)</li><li>Use heavy shadows, gradients or all-caps headlines</li><li>Reuse photos of real members from thrivent.com</li><li>Present the concept as a live Thrivent product</li></ul></div>
+  </div>
+</div></section>
+
+<div class="band"><div class="wrap"><svg role="img" aria-label="Thrivent" style="height:36px;width:auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-273.5 41 120.9 321.5">
+ <style type="text/css">
+  .st0{fill:#BE1D3D;}
+	.st1{fill:#E30045;}
+ </style>
+ 
+ 
+ <g>
+  <g transform="translate(-62.000000, -101.000000)">
+   <g>
+    <g transform="translate(62.000000, 101.000000)">
+     <g>
+      <g transform="translate(149.128370, 3.446727)">
+       <path class="st0" d="M-360.3,103.5V66.8c0-16.2-15-29.3-31.2-29.3c-16.2,0-31.2,13.1-31.2,29.3v91.7h62.4V103.5">
+       </path>
+       <path class="st1" d="M-367.6,158.5h36.7c16.2,0,29.3-15,29.3-31.2c0-16.2-13.1-31.2-29.3-31.2h-91.7v62.4H-367.6">
+       </path>
+      </g>
+      <g transform="translate(69.164313, 9.191271)">
+       <path d="M-280.3,152.8h-62.4v108.5c0,32.2,6.5,55.6,19.5,70.2c13,14.6,36.9,21.9,71.6,21.9h26.8v-60.9h-21 c-14,0-23.2-2.8-27.8-8.3c-4.6-5.5-6.8-15.1-6.8-28.8V152.8">
+       </path>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg><span>Where Money Means More<sup style="font-size:10px">TM</sup></span></div></div>
+<div class="foot">Concept by Modern Climate · Illustrative only · Not a live Thrivent product · Styles inspected on thrivent.com, Nov 12, 2026</div>
+</body>
+</html>
