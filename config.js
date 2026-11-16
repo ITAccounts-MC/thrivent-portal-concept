@@ -8,6 +8,6 @@ window.MC_CONFIG = {
      true  = show it; viewers click "I understand" to continue
      false = skip it; the presentation flows straight from the
              seven-seasons slide into the story */
-  confidentialityScreen: false
+  confidentialityScreen: true
 
 };
