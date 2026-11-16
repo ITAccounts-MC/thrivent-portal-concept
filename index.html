@@ -116,6 +116,7 @@ button{font-family:inherit;cursor:pointer}
 @media (prefers-reduced-motion:reduce){.mcs.in .mc-txt{animation:none}}
 
 /* ---------- confidentiality pause ---------- */
+html.no-pact #pact{display:none}
 html.locked #story,html.locked #lifetime,html.locked #how,html.locked #outro{display:none}
 html:not(.locked) .pact .pact-btn{display:none}
 html:not(.locked) .pact .pact-done{display:inline-flex}
@@ -638,8 +639,11 @@ button.bub.out{border:0;font:inherit;text-align:left;cursor:pointer;animation:li
 .ill.line{background:rgba(255,255,255,.07)!important;box-shadow:inset 0 0 0 1px rgba(249,236,215,.28)}
 .arch.line{background:linear-gradient(170deg,#E3ECEE,#C9D9DE)!important}
 </style>
+<script src="config.js"></script>
 <script>/* confidentiality acknowledgment: lock the story until acknowledged (once per browser; ?present skips) */
-(function(){var ok=/[?&]present\b/.test(location.search);try{ok=ok||localStorage.getItem('mc-thrivent-ack')==='1'}catch(e){}if(!ok)document.documentElement.classList.add('locked')})();</script>
+(function(){var C=window.MC_CONFIG||{},h=document.documentElement;
+ if(C.confidentialityScreen===false){h.classList.add('no-pact');return}
+ var ok=/[?&]present\b/.test(location.search);try{ok=ok||localStorage.getItem('mc-thrivent-ack')==='1'}catch(e){}if(!ok)h.classList.add('locked')})();</script>
 </head>
 <body>
 
@@ -1514,7 +1518,7 @@ addEventListener('keydown',e=>{
  if(e.key==='Escape'){if($('#drawer').classList.contains('on'))closeMsg();else if($('#frame').classList.contains('expanded'))setExpand(false);return}
  if($('#drawer').classList.contains('on')||e.target.tagName==='INPUT')return;
  const fwd=['ArrowDown','PageDown',' '].includes(e.key),back=['ArrowUp','PageUp'].includes(e.key);if(!fwd&&!back)return;
- e.preventDefault();const items=[...document.querySelectorAll('#intro, .slide, .step, .chapter')];
+ e.preventDefault();const items=[...document.querySelectorAll('#intro, .slide, .step, .chapter')].filter(el=>el.getClientRects().length);
  const mid=innerHeight/2;const sr=$('#story').getBoundingClientRect();let idx;
  if(activeChap)idx=items.indexOf(activeChap);else if(sr.top<mid&&sr.bottom>mid&&activeStep)idx=items.indexOf(activeStep);
  else{idx=items.findIndex(el=>{const r=el.getBoundingClientRect();return r.top<=mid+2&&r.bottom>=mid-2});if(idx<0)idx=0}

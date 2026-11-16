@@ -7,3 +7,9 @@
     X-Robots-Tag = "noindex, nofollow"
     X-Frame-Options = "SAMEORIGIN"
     Referrer-Policy = "no-referrer"
+
+# Always fetch the latest settings file
+[[headers]]
+  for = "/config.js"
+  [headers.values]
+    Cache-Control = "no-cache"
